@@ -27,9 +27,7 @@ export class ArrayOfModelWithOneofModelsInside {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/dog";
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         headers["Accept"] = "application/xml";
 
@@ -96,9 +94,7 @@ export class ArrayOfModelWithOneofModelsInside {
         );
         const url: string =
             baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/catsanddogs";
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         headers["Accept"] = "application/xml";
 
@@ -177,9 +173,7 @@ export class ArrayOfModelWithOneofModelsInside {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null || Object.keys(reqBody).length === 0)
             throw new Error("request body is required");
@@ -263,9 +257,7 @@ export class ArrayOfModelWithOneofModelsInside {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null || Object.keys(reqBody).length === 0)
             throw new Error("request body is required");
