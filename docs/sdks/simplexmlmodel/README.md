@@ -1,4 +1,4 @@
-# simpleXmlModel
+# SimpleXmlModel
 
 ### Available Operations
 

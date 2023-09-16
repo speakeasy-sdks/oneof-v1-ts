@@ -1,4 +1,4 @@
-# arrayOfModelWithOneofModelsInside
+# ArrayOfModelWithOneofModelsInside
 
 ### Available Operations
 

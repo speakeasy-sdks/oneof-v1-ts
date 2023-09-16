@@ -1,4 +1,4 @@
-# oneofArrayOrSingleXmlModelWithOptionalWrappingElement
+# OneofArrayOrSingleXmlModelWithOptionalWrappingElement
 
 ### Available Operations
 

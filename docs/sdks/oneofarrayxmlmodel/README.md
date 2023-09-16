@@ -1,4 +1,4 @@
-# oneofArrayXmlModel
+# OneofArrayXmlModel
 
 ### Available Operations
 

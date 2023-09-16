@@ -1,4 +1,4 @@
-# oneofXmlModel
+# OneofXmlModel
 
 ### Available Operations
 
