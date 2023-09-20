@@ -164,7 +164,7 @@ export class ArrayOfModelWithOneofModelsInside {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/dog";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(req, "request", "raw");
@@ -175,8 +175,7 @@ export class ArrayOfModelWithOneofModelsInside {
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers = { ...reqBodyHeaders, ...config?.headers };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
         headers[
@@ -248,7 +247,7 @@ export class ArrayOfModelWithOneofModelsInside {
         const url: string =
             baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/catsanddogs";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(req, "request", "raw");
@@ -259,8 +258,7 @@ export class ArrayOfModelWithOneofModelsInside {
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers = { ...reqBodyHeaders, ...config?.headers };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
         headers[

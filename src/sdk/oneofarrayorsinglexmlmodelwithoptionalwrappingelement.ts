@@ -229,7 +229,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/catoradogorwolves/dog";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(req, "request", "raw");
@@ -240,8 +240,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers = { ...reqBodyHeaders, ...config?.headers };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
         headers[
@@ -312,7 +311,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/arraycats";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(req, "request", "raw");
@@ -323,8 +322,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers = { ...reqBodyHeaders, ...config?.headers };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
         headers[
@@ -395,7 +393,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/wolfwrapped";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(req, "request", "raw");
@@ -406,8 +404,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers = { ...reqBodyHeaders, ...config?.headers };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
         headers[
