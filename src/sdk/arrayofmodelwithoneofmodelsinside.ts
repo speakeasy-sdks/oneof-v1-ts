@@ -6,7 +6,7 @@ import * as utils from "../internal/utils";
 import * as errors from "./models/errors";
 import * as operations from "./models/operations";
 import { SDKConfiguration } from "./sdk";
-import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
 export class ArrayOfModelWithOneofModelsInside {
     private sdkConfiguration: SDKConfiguration;
@@ -28,7 +28,7 @@ export class ArrayOfModelWithOneofModelsInside {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/dog";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
 
         headers[
@@ -95,7 +95,7 @@ export class ArrayOfModelWithOneofModelsInside {
         const url: string =
             baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/catsanddogs";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
 
         headers[
@@ -174,7 +174,7 @@ export class ArrayOfModelWithOneofModelsInside {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...reqBodyHeaders, ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
@@ -257,7 +257,7 @@ export class ArrayOfModelWithOneofModelsInside {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...reqBodyHeaders, ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 

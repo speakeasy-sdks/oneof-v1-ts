@@ -6,7 +6,7 @@ import * as utils from "../internal/utils";
 import * as errors from "./models/errors";
 import * as operations from "./models/operations";
 import { SDKConfiguration } from "./sdk";
-import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
 export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
     private sdkConfiguration: SDKConfiguration;
@@ -28,7 +28,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/wolfwrapped";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
 
         headers[
@@ -94,7 +94,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/dog";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
 
         headers[
@@ -160,7 +160,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/arraycats";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
 
         headers[
@@ -239,7 +239,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...reqBodyHeaders, ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
@@ -321,7 +321,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...reqBodyHeaders, ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
@@ -403,7 +403,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...reqBodyHeaders, ...config?.headers };
+        const headers: RawAxiosRequestHeaders = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "text/plain";
 
