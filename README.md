@@ -18,8 +18,6 @@ yarn add https://github.com/speakeasy-sdks/oneof-v1-ts
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { OneOf } from "oneOf";
 import { GetGenerate13Response } from "oneOf/dist/sdk/models/operations";
@@ -75,6 +73,32 @@ sdk.arrayOfModelWithOneofModelsInside.getGenerate13().then((res: GetGenerate13Re
 * [validate](docs/sdks/simplexmlmodel/README.md#validate) - Validate
 * [validate1](docs/sdks/simplexmlmodel/README.md#validate1) - Validate1
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `next` method that can be called to pull down the next group of results. If the
+return value of `next` is `null`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 

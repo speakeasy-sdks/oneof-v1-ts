@@ -55,12 +55,6 @@ src/sdk/models/shared/wolf.ts
 src/sdk/models/shared/catordog.ts
 src/sdk/models/shared/index.ts
 src/sdk/models/errors/index.ts
-docs/sdks/oneof/README.md
-docs/sdks/arrayofmodelwithoneofmodelsinside/README.md
-docs/sdks/oneofarrayxmlmodel/README.md
-docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md
-docs/sdks/oneofxmlmodel/README.md
-docs/sdks/simplexmlmodel/README.md
 USAGE.md
 docs/models/operations/getgenerate13response.md
 docs/models/operations/getgenerate4response.md
@@ -91,4 +85,10 @@ docs/models/shared/catsordogs.md
 docs/models/shared/catsoradogorwolves.md
 docs/models/shared/wolf.md
 docs/models/shared/catordog.md
+docs/sdks/oneof/README.md
+docs/sdks/arrayofmodelwithoneofmodelsinside/README.md
+docs/sdks/oneofarrayxmlmodel/README.md
+docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md
+docs/sdks/oneofxmlmodel/README.md
+docs/sdks/simplexmlmodel/README.md
 .gitattributes
