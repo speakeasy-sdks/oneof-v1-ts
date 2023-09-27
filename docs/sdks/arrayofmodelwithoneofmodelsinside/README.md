@@ -1,4 +1,5 @@
 # ArrayOfModelWithOneofModelsInside
+(*arrayOfModelWithOneofModelsInside*)
 
 ### Available Operations
 

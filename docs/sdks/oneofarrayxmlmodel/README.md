@@ -1,4 +1,5 @@
 # OneofArrayXmlModel
+(*oneofArrayXmlModel*)
 
 ### Available Operations
 

@@ -36,21 +36,21 @@ sdk.arrayOfModelWithOneofModelsInside.getGenerate13().then((res: GetGenerate13Re
 ## Available Resources and Operations
 
 
-### [ArrayOfModelWithOneofModelsInside](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md)
+### [arrayOfModelWithOneofModelsInside](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md)
 
 * [getGenerate13](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#getgenerate13) - Generate1
 * [getGenerate4](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#getgenerate4) - Generate
 * [postValidate13](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#postvalidate13) - Validate1
 * [postValidate4](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#postvalidate4) - Validate
 
-### [OneofArrayXmlModel](docs/sdks/oneofarrayxmlmodel/README.md)
+### [oneofArrayXmlModel](docs/sdks/oneofarrayxmlmodel/README.md)
 
 * [getGenerate11](docs/sdks/oneofarrayxmlmodel/README.md#getgenerate11) - Generate1
 * [getGenerate2](docs/sdks/oneofarrayxmlmodel/README.md#getgenerate2) - Generate
 * [postValidate11](docs/sdks/oneofarrayxmlmodel/README.md#postvalidate11) - Validate1
 * [postValidate2](docs/sdks/oneofarrayxmlmodel/README.md#postvalidate2) - Validate
 
-### [OneofArrayOrSingleXmlModelWithOptionalWrappingElement](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md)
+### [oneofArrayOrSingleXmlModelWithOptionalWrappingElement](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md)
 
 * [generate2](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#generate2) - Generate2
 * [getGenerate12](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#getgenerate12) - Generate1
@@ -59,14 +59,14 @@ sdk.arrayOfModelWithOneofModelsInside.getGenerate13().then((res: GetGenerate13Re
 * [postValidate3](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#postvalidate3) - Validate
 * [validate2](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#validate2) - Validate2
 
-### [OneofXmlModel](docs/sdks/oneofxmlmodel/README.md)
+### [oneofXmlModel](docs/sdks/oneofxmlmodel/README.md)
 
 * [getGenerate](docs/sdks/oneofxmlmodel/README.md#getgenerate) - Generate
 * [getGenerate1](docs/sdks/oneofxmlmodel/README.md#getgenerate1) - Generate1
 * [postValidate](docs/sdks/oneofxmlmodel/README.md#postvalidate) - Validate
 * [postValidate1](docs/sdks/oneofxmlmodel/README.md#postvalidate1) - Validate1
 
-### [SimpleXmlModel](docs/sdks/simplexmlmodel/README.md)
+### [simpleXmlModel](docs/sdks/simplexmlmodel/README.md)
 
 * [generate](docs/sdks/simplexmlmodel/README.md#generate) - Generate
 * [generate1](docs/sdks/simplexmlmodel/README.md#generate1) - Generate1
