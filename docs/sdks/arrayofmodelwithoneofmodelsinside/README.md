@@ -82,7 +82,7 @@ import { PostValidate13Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.arrayOfModelWithOneofModelsInside.postValidate13("corrupti".encode()).then((res: PostValidate13Response) => {
+sdk.arrayOfModelWithOneofModelsInside.postValidate13("rXJ#*DNx!F" as bytes <<<>>>).then((res: PostValidate13Response) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -114,7 +114,7 @@ import { PostValidate4Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.arrayOfModelWithOneofModelsInside.postValidate4("provident".encode()).then((res: PostValidate4Response) => {
+sdk.arrayOfModelWithOneofModelsInside.postValidate4("?4XB(ZSf0!" as bytes <<<>>>).then((res: PostValidate4Response) => {
   if (res.statusCode == 200) {
     // handle response
   }

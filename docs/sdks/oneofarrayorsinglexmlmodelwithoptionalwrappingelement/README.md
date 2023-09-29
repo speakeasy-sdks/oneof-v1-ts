@@ -115,7 +115,7 @@ import { PostValidate12Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate12("unde".encode()).then((res: PostValidate12Response) => {
+sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate12("dG.=%vb}GD" as bytes <<<>>>).then((res: PostValidate12Response) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -147,7 +147,7 @@ import { PostValidate3Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate3("nulla".encode()).then((res: PostValidate3Response) => {
+sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate3("Sw@\"}sPH!\" as bytes <<<>>>).then((res: PostValidate3Response) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -179,7 +179,7 @@ import { Validate2Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.validate2("corrupti".encode()).then((res: Validate2Response) => {
+sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.validate2("Kb8,gas|Ww" as bytes <<<>>>).then((res: Validate2Response) => {
   if (res.statusCode == 200) {
     // handle response
   }

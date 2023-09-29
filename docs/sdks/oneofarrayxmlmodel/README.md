@@ -82,7 +82,7 @@ import { PostValidate11Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.oneofArrayXmlModel.postValidate11("distinctio".encode()).then((res: PostValidate11Response) => {
+sdk.oneofArrayXmlModel.postValidate11("[.$i%e9YEw" as bytes <<<>>>).then((res: PostValidate11Response) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -114,7 +114,7 @@ import { PostValidate2Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.oneofArrayXmlModel.postValidate2("quibusdam".encode()).then((res: PostValidate2Response) => {
+sdk.oneofArrayXmlModel.postValidate2("o#0;e5bE!{" as bytes <<<>>>).then((res: PostValidate2Response) => {
   if (res.statusCode == 200) {
     // handle response
   }

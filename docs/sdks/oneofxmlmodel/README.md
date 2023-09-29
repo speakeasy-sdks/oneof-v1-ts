@@ -82,7 +82,7 @@ import { PostValidateResponse } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.oneofXmlModel.postValidate("illum".encode()).then((res: PostValidateResponse) => {
+sdk.oneofXmlModel.postValidate("Vb96?bTg=M" as bytes <<<>>>).then((res: PostValidateResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -114,7 +114,7 @@ import { PostValidate1Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.oneofXmlModel.postValidate1("vel".encode()).then((res: PostValidate1Response) => {
+sdk.oneofXmlModel.postValidate1("cW>2F^@u/|" as bytes <<<>>>).then((res: PostValidate1Response) => {
   if (res.statusCode == 200) {
     // handle response
   }

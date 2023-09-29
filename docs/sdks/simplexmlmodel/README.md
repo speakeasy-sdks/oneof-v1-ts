@@ -82,7 +82,7 @@ import { ValidateResponse } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.simpleXmlModel.validate("error".encode()).then((res: ValidateResponse) => {
+sdk.simpleXmlModel.validate("[:ki7hA&_\"" as bytes <<<>>>).then((res: ValidateResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -114,7 +114,7 @@ import { Validate1Response } from "oneOf/dist/sdk/models/operations";
 
 const sdk = new OneOf();
 
-sdk.simpleXmlModel.validate1("deserunt".encode()).then((res: Validate1Response) => {
+sdk.simpleXmlModel.validate1("R(h=I2U1f1" as bytes <<<>>>).then((res: Validate1Response) => {
   if (res.statusCode == 200) {
     // handle response
   }
