@@ -3,11 +3,12 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
+import { Cat } from "./cat";
 
 /**
  * Case 2
  */
 export class CatsOrDogs extends SpeakeasyBase {
-    @SpeakeasyMetadata()
-    value: any;
+    @SpeakeasyMetadata({ elemType: Cat })
+    value: Cat[];
 }
