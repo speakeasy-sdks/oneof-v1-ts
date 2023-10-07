@@ -16,15 +16,16 @@ This endpoint returns a 'CatsOrDogs' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerate11Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayXmlModel.getGenerate11().then((res: GetGenerate11Response) => {
+  const res = await sdk.oneofArrayXmlModel.getGenerate11();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -47,15 +48,16 @@ This endpoint returns a 'CatsOrDogs' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerate2Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayXmlModel.getGenerate2().then((res: GetGenerate2Response) => {
+  const res = await sdk.oneofArrayXmlModel.getGenerate2();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -78,15 +80,16 @@ This endpoint expects a 'CatsOrDogs' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidate11Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayXmlModel.postValidate11("[.$i%e9YEw" as bytes <<<>>>).then((res: PostValidate11Response) => {
+  const res = await sdk.oneofArrayXmlModel.postValidate11("[.$i%e9YEw" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -110,15 +113,16 @@ This endpoint expects a 'CatsOrDogs' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidate2Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayXmlModel.postValidate2("o#0;e5bE!{" as bytes <<<>>>).then((res: PostValidate2Response) => {
+  const res = await sdk.oneofArrayXmlModel.postValidate2("o#0;e5bE!{" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

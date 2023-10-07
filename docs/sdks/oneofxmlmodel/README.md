@@ -16,15 +16,16 @@ This endpoint returns a 'CatOrDog' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerateResponse } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofXmlModel.getGenerate().then((res: GetGenerateResponse) => {
+  const res = await sdk.oneofXmlModel.getGenerate();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -47,15 +48,16 @@ This endpoint returns a 'CatOrDog' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerate1Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofXmlModel.getGenerate1().then((res: GetGenerate1Response) => {
+  const res = await sdk.oneofXmlModel.getGenerate1();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -78,15 +80,16 @@ This endpoint expects a 'CatOrDog' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidateResponse } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofXmlModel.postValidate("Vb96?bTg=M" as bytes <<<>>>).then((res: PostValidateResponse) => {
+  const res = await sdk.oneofXmlModel.postValidate("Vb96?bTg=M" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -110,15 +113,16 @@ This endpoint expects a 'CatOrDog' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidate1Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofXmlModel.postValidate1("cW>2F^@u/|" as bytes <<<>>>).then((res: PostValidate1Response) => {
+  const res = await sdk.oneofXmlModel.postValidate1("cW>2F^@u/|" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

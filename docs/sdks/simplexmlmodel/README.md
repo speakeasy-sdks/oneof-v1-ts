@@ -16,15 +16,16 @@
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GenerateResponse } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.simpleXmlModel.generate().then((res: GenerateResponse) => {
+  const res = await sdk.simpleXmlModel.generate();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -47,15 +48,16 @@ This endpoint returns a 'Dog' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { Generate1Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.simpleXmlModel.generate1().then((res: Generate1Response) => {
+  const res = await sdk.simpleXmlModel.generate1();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -78,15 +80,16 @@ This endpoint expects a 'Cat' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { ValidateResponse } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.simpleXmlModel.validate("[:ki7hA&_\"" as bytes <<<>>>).then((res: ValidateResponse) => {
+  const res = await sdk.simpleXmlModel.validate("[:ki7hA&_\"" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -110,15 +113,16 @@ This endpoint expects a 'Dog' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { Validate1Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.simpleXmlModel.validate1("R(h=I2U1f1" as bytes <<<>>>).then((res: Validate1Response) => {
+  const res = await sdk.simpleXmlModel.validate1("R(h=I2U1f1" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

@@ -18,15 +18,16 @@ This endpoint returns a 'CatsOrADogOrWolves' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { Generate2Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.generate2().then((res: Generate2Response) => {
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.generate2();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -49,15 +50,16 @@ This endpoint returns a 'CatsOrADogOrWolves' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerate12Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate12().then((res: GetGenerate12Response) => {
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate12();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -80,15 +82,16 @@ This endpoint returns a 'CatsOrADogOrWolves' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerate3Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate3().then((res: GetGenerate3Response) => {
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate3();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -111,15 +114,16 @@ This endpoint expects a 'CatsOrADogOrWolves' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidate12Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate12("dG.=%vb}GD" as bytes <<<>>>).then((res: PostValidate12Response) => {
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate12("dG.=%vb}GD" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -143,15 +147,16 @@ This endpoint expects a 'CatsOrADogOrWolves' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidate3Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate3("Sw@\"}sPH!\" as bytes <<<>>>).then((res: PostValidate3Response) => {
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate3("Sw@\"}sPH!\" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -175,15 +180,16 @@ This endpoint expects a 'CatsOrADogOrWolves' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { Validate2Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.validate2("Kb8,gas|Ww" as bytes <<<>>>).then((res: Validate2Response) => {
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.validate2("Kb8,gas|Ww" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

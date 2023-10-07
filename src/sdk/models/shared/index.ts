@@ -8,4 +8,3 @@ export * from "./catordog";
 export * from "./catsoradogorwolves";
 export * from "./catsordogs";
 export * from "./dog";
-export * from "./wolf";

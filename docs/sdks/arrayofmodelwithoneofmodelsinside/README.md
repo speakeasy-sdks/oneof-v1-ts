@@ -16,15 +16,16 @@ This endpoint returns a 'ArrayOfCatOrDogObjects' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerate13Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.arrayOfModelWithOneofModelsInside.getGenerate13().then((res: GetGenerate13Response) => {
+  const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate13();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -47,15 +48,16 @@ This endpoint returns a 'ArrayOfCatOrDogObjects' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { GetGenerate4Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.arrayOfModelWithOneofModelsInside.getGenerate4().then((res: GetGenerate4Response) => {
+  const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate4();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -78,15 +80,16 @@ This endpoint expects a 'ArrayOfCatOrDogObjects' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidate13Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.arrayOfModelWithOneofModelsInside.postValidate13("rXJ#*DNx!F" as bytes <<<>>>).then((res: PostValidate13Response) => {
+  const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate13("rXJ#*DNx!F" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -110,15 +113,16 @@ This endpoint expects a 'ArrayOfCatOrDogObjects' model as xml.
 
 ```typescript
 import { OneOf } from "oneOf";
-import { PostValidate4Response } from "oneOf/dist/sdk/models/operations";
 
-const sdk = new OneOf();
+(async() => {
+  const sdk = new OneOf();
 
-sdk.arrayOfModelWithOneofModelsInside.postValidate4("?4XB(ZSf0!" as bytes <<<>>>).then((res: PostValidate4Response) => {
+  const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate4("?4XB(ZSf0!" as bytes <<<>>>);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
