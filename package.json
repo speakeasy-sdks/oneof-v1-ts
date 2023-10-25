@@ -1,6 +1,6 @@
 {
   "name": "oneOf",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "author": "haseeb-mhr",
   "scripts": {
     "prepare": "tsc --build",
