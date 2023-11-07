@@ -1,5 +1,5 @@
 # OneofArrayXmlModel
-(*oneofArrayXmlModel*)
+(*.oneofArrayXmlModel*)
 
 ### Available Operations
 
@@ -21,6 +21,7 @@ import { OneOf } from "oneOf";
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayXmlModel.getGenerate11();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -54,6 +55,7 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.oneofArrayXmlModel.getGenerate2();
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -84,7 +86,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.oneofArrayXmlModel.postValidate11("[.$i%e9YEw" as bytes <<<>>>);
+  const res = await sdk.oneofArrayXmlModel.postValidate11(new TextEncoder().encode("0xd30B1A5d8E"));
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -117,7 +120,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.oneofArrayXmlModel.postValidate2("o#0;e5bE!{" as bytes <<<>>>);
+  const res = await sdk.oneofArrayXmlModel.postValidate2(new TextEncoder().encode("0xC036A4f80F"));
+
 
   if (res.statusCode == 200) {
     // handle response

@@ -52,9 +52,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "0.0.0";
-    sdkVersion = "0.10.0";
-    genVersion = "2.171.0";
-    userAgent = "speakeasy-sdk/typescript 0.10.0 2.171.0 0.0.0 oneOf";
+    sdkVersion = "0.11.0";
+    genVersion = "2.181.1";
+    userAgent = "speakeasy-sdk/typescript 0.11.0 2.181.1 0.0.0 oneOf";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -63,10 +63,10 @@ export class SDKConfiguration {
 
 export class OneOf {
     public arrayOfModelWithOneofModelsInside: ArrayOfModelWithOneofModelsInside;
-    public oneofArrayXmlModel: OneofArrayXmlModel;
-    public oneofArrayOrSingleXmlModelWithOptionalWrappingElement: OneofArrayOrSingleXmlModelWithOptionalWrappingElement;
-    public oneofXmlModel: OneofXmlModel;
     public simpleXmlModel: SimpleXmlModel;
+    public oneofArrayOrSingleXmlModelWithOptionalWrappingElement: OneofArrayOrSingleXmlModelWithOptionalWrappingElement;
+    public oneofArrayXmlModel: OneofArrayXmlModel;
+    public oneofXmlModel: OneofXmlModel;
 
     private sdkConfiguration: SDKConfiguration;
 
@@ -88,10 +88,10 @@ export class OneOf {
         this.arrayOfModelWithOneofModelsInside = new ArrayOfModelWithOneofModelsInside(
             this.sdkConfiguration
         );
-        this.oneofArrayXmlModel = new OneofArrayXmlModel(this.sdkConfiguration);
+        this.simpleXmlModel = new SimpleXmlModel(this.sdkConfiguration);
         this.oneofArrayOrSingleXmlModelWithOptionalWrappingElement =
             new OneofArrayOrSingleXmlModelWithOptionalWrappingElement(this.sdkConfiguration);
+        this.oneofArrayXmlModel = new OneofArrayXmlModel(this.sdkConfiguration);
         this.oneofXmlModel = new OneofXmlModel(this.sdkConfiguration);
-        this.simpleXmlModel = new SimpleXmlModel(this.sdkConfiguration);
     }
 }

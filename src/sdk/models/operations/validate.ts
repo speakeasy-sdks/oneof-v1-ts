@@ -25,5 +25,5 @@ export class ValidateResponse extends SpeakeasyBase {
     rawResponse?: AxiosResponse;
 
     @SpeakeasyMetadata()
-    validate200TextPlainObject?: string;
+    res?: string;
 }

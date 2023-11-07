@@ -3,8 +3,8 @@
  */
 
 import * as utils from "../internal/utils";
-import * as errors from "./models/errors";
-import * as operations from "./models/operations";
+import * as errors from "../sdk/models/errors";
+import * as operations from "../sdk/models/operations";
 import { SDKConfiguration } from "./sdk";
 import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
@@ -264,7 +264,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         switch (true) {
             case httpRes?.status == 200:
                 if (utils.matchContentType(contentType, `text/plain`)) {
-                    res.postValidate12200TextPlainObject = decodedRes;
+                    res.res = decodedRes;
                 } else {
                     throw new errors.SDKError(
                         "unknown content-type received: " + contentType,
@@ -344,7 +344,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         switch (true) {
             case httpRes?.status == 200:
                 if (utils.matchContentType(contentType, `text/plain`)) {
-                    res.postValidate3200TextPlainObject = decodedRes;
+                    res.res = decodedRes;
                 } else {
                     throw new errors.SDKError(
                         "unknown content-type received: " + contentType,
@@ -424,7 +424,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
         switch (true) {
             case httpRes?.status == 200:
                 if (utils.matchContentType(contentType, `text/plain`)) {
-                    res.validate2200TextPlainObject = decodedRes;
+                    res.res = decodedRes;
                 } else {
                     throw new errors.SDKError(
                         "unknown content-type received: " + contentType,

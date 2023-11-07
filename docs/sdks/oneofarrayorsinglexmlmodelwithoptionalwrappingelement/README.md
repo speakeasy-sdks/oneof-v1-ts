@@ -1,5 +1,5 @@
 # OneofArrayOrSingleXmlModelWithOptionalWrappingElement
-(*oneofArrayOrSingleXmlModelWithOptionalWrappingElement*)
+(*.oneofArrayOrSingleXmlModelWithOptionalWrappingElement*)
 
 ### Available Operations
 
@@ -23,6 +23,7 @@ import { OneOf } from "oneOf";
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.generate2();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -56,6 +57,7 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate12();
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -88,6 +90,7 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate3();
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -118,7 +121,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate12("dG.=%vb}GD" as bytes <<<>>>);
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate12(new TextEncoder().encode("0xf9361EfF98"));
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -151,7 +155,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate3("Sw@\"}sPH!\" as bytes <<<>>>);
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate3(new TextEncoder().encode("0xcE70FDb90d"));
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -184,7 +189,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.validate2("Kb8,gas|Ww" as bytes <<<>>>);
+  const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.validate2(new TextEncoder().encode("0x9f52AfDFcE"));
+
 
   if (res.statusCode == 200) {
     // handle response

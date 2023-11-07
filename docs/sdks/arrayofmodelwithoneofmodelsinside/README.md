@@ -1,5 +1,5 @@
 # ArrayOfModelWithOneofModelsInside
-(*arrayOfModelWithOneofModelsInside*)
+(*.arrayOfModelWithOneofModelsInside*)
 
 ### Available Operations
 
@@ -21,6 +21,7 @@ import { OneOf } from "oneOf";
   const sdk = new OneOf();
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate13();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -54,6 +55,7 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate4();
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -84,7 +86,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate13("rXJ#*DNx!F" as bytes <<<>>>);
+  const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate13(new TextEncoder().encode("0xDd9028aE08"));
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -117,7 +120,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate4("?4XB(ZSf0!" as bytes <<<>>>);
+  const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate4(new TextEncoder().encode("0x74d81dbA30"));
+
 
   if (res.statusCode == 200) {
     // handle response

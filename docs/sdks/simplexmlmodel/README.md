@@ -1,5 +1,5 @@
 # SimpleXmlModel
-(*simpleXmlModel*)
+(*.simpleXmlModel*)
 
 ### Available Operations
 
@@ -21,6 +21,7 @@ import { OneOf } from "oneOf";
   const sdk = new OneOf();
 
   const res = await sdk.simpleXmlModel.generate();
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -54,6 +55,7 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.simpleXmlModel.generate1();
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -84,7 +86,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.simpleXmlModel.validate("[:ki7hA&_\"" as bytes <<<>>>);
+  const res = await sdk.simpleXmlModel.validate(new TextEncoder().encode("0xd6BB5B71e0"));
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -117,7 +120,8 @@ import { OneOf } from "oneOf";
 (async() => {
   const sdk = new OneOf();
 
-  const res = await sdk.simpleXmlModel.validate1("R(h=I2U1f1" as bytes <<<>>>);
+  const res = await sdk.simpleXmlModel.validate1(new TextEncoder().encode("0xb1A694c3A3"));
+
 
   if (res.statusCode == 200) {
     // handle response

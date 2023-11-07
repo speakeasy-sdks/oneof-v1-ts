@@ -12,9 +12,6 @@ export class PostValidateResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     contentType: string;
 
-    @SpeakeasyMetadata()
-    postValidate200TextPlainObject?: string;
-
     /**
      * HTTP response status code for this operation
      */
@@ -26,4 +23,7 @@ export class PostValidateResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    @SpeakeasyMetadata()
+    res?: string;
 }
