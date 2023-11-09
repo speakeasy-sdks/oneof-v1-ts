@@ -1,5 +1,5 @@
 # ArrayOfModelWithOneofModelsInside
-(*.arrayOfModelWithOneofModelsInside*)
+(*arrayOfModelWithOneofModelsInside*)
 
 ### Available Operations
 
@@ -22,7 +22,6 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate13();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -38,8 +37,12 @@ import { OneOf } from "oneOf";
 
 ### Response
 
-**Promise<[operations.GetGenerate13Response](../../models/operations/getgenerate13response.md)>**
+**Promise<[operations.GetGenerate13Response](../../sdk/models/operations/getgenerate13response.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getGenerate4
 
@@ -55,7 +58,6 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate4();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -71,8 +73,12 @@ import { OneOf } from "oneOf";
 
 ### Response
 
-**Promise<[operations.GetGenerate4Response](../../models/operations/getgenerate4response.md)>**
+**Promise<[operations.GetGenerate4Response](../../sdk/models/operations/getgenerate4response.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postValidate13
 
@@ -88,7 +94,6 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate13(new TextEncoder().encode("0xDd9028aE08"));
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -99,14 +104,18 @@ import { OneOf } from "oneOf";
 
 | Parameter                                                    | Type                                                         | Required                                                     | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `request`                                                    | [Uint8Array](../../models//.md)                              | :heavy_check_mark:                                           | The request object to use for the request.                   |
+| `request`                                                    | [Uint8Array](../../models/.md)                               | :heavy_check_mark:                                           | The request object to use for the request.                   |
 | `config`                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config) | :heavy_minus_sign:                                           | Available config options for making requests.                |
 
 
 ### Response
 
-**Promise<[operations.PostValidate13Response](../../models/operations/postvalidate13response.md)>**
+**Promise<[operations.PostValidate13Response](../../sdk/models/operations/postvalidate13response.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postValidate4
 
@@ -122,7 +131,6 @@ import { OneOf } from "oneOf";
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate4(new TextEncoder().encode("0x74d81dbA30"));
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -133,11 +141,15 @@ import { OneOf } from "oneOf";
 
 | Parameter                                                    | Type                                                         | Required                                                     | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `request`                                                    | [Uint8Array](../../models//.md)                              | :heavy_check_mark:                                           | The request object to use for the request.                   |
+| `request`                                                    | [Uint8Array](../../models/.md)                               | :heavy_check_mark:                                           | The request object to use for the request.                   |
 | `config`                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config) | :heavy_minus_sign:                                           | Available config options for making requests.                |
 
 
 ### Response
 
-**Promise<[operations.PostValidate4Response](../../models/operations/postvalidate4response.md)>**
+**Promise<[operations.PostValidate4Response](../../sdk/models/operations/postvalidate4response.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

@@ -26,7 +26,8 @@ export class ArrayOfModelWithOneofModelsInside {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/dog";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/dog";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
@@ -35,7 +36,7 @@ export class ArrayOfModelWithOneofModelsInside {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -90,7 +91,7 @@ export class ArrayOfModelWithOneofModelsInside {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string =
+        const operationUrl: string =
             baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/catsanddogs";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
@@ -100,7 +101,7 @@ export class ArrayOfModelWithOneofModelsInside {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -158,7 +159,8 @@ export class ArrayOfModelWithOneofModelsInside {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/dog";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/dog";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -178,7 +180,7 @@ export class ArrayOfModelWithOneofModelsInside {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -238,7 +240,7 @@ export class ArrayOfModelWithOneofModelsInside {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string =
+        const operationUrl: string =
             baseURL.replace(/\/$/, "") + "/oneof/arrayofcatordogobjects/catsanddogs";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
@@ -259,7 +261,7 @@ export class ArrayOfModelWithOneofModelsInside {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

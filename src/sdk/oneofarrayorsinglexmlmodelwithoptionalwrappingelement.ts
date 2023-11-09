@@ -26,7 +26,8 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/wolfwrapped";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/wolfwrapped";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
@@ -35,7 +36,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -90,7 +91,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/dog";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/dog";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
@@ -99,7 +100,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -154,7 +155,8 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/arraycats";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/arraycats";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
@@ -163,7 +165,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -221,7 +223,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catoradogorwolves/dog";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/oneof/catoradogorwolves/dog";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -241,7 +243,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -301,7 +303,8 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/arraycats";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/arraycats";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -321,7 +324,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -381,7 +384,8 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/wolfwrapped";
+        const operationUrl: string =
+            baseURL.replace(/\/$/, "") + "/oneof/catsoradogorwolves/wolfwrapped";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -401,7 +405,7 @@ export class OneofArrayOrSingleXmlModelWithOptionalWrappingElement {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

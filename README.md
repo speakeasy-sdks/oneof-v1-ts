@@ -38,21 +38,21 @@ import { OneOf } from "oneOf";
 ## Available Resources and Operations
 
 
-### [.arrayOfModelWithOneofModelsInside](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md)
+### [arrayOfModelWithOneofModelsInside](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md)
 
 * [getGenerate13](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#getgenerate13) - Generate1
 * [getGenerate4](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#getgenerate4) - Generate
 * [postValidate13](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#postvalidate13) - Validate1
 * [postValidate4](docs/sdks/arrayofmodelwithoneofmodelsinside/README.md#postvalidate4) - Validate
 
-### [.simpleXmlModel](docs/sdks/simplexmlmodel/README.md)
+### [simpleXmlModel](docs/sdks/simplexmlmodel/README.md)
 
 * [generate](docs/sdks/simplexmlmodel/README.md#generate) - Generate
 * [generate1](docs/sdks/simplexmlmodel/README.md#generate1) - Generate1
 * [validate](docs/sdks/simplexmlmodel/README.md#validate) - Validate
 * [validate1](docs/sdks/simplexmlmodel/README.md#validate1) - Validate1
 
-### [.oneofArrayOrSingleXmlModelWithOptionalWrappingElement](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md)
+### [oneofArrayOrSingleXmlModelWithOptionalWrappingElement](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md)
 
 * [generate2](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#generate2) - Generate2
 * [getGenerate12](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#getgenerate12) - Generate1
@@ -61,14 +61,14 @@ import { OneOf } from "oneOf";
 * [postValidate3](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#postvalidate3) - Validate
 * [validate2](docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md#validate2) - Validate2
 
-### [.oneofArrayXmlModel](docs/sdks/oneofarrayxmlmodel/README.md)
+### [oneofArrayXmlModel](docs/sdks/oneofarrayxmlmodel/README.md)
 
 * [getGenerate11](docs/sdks/oneofarrayxmlmodel/README.md#getgenerate11) - Generate1
 * [getGenerate2](docs/sdks/oneofarrayxmlmodel/README.md#getgenerate2) - Generate
 * [postValidate11](docs/sdks/oneofarrayxmlmodel/README.md#postvalidate11) - Validate1
 * [postValidate2](docs/sdks/oneofarrayxmlmodel/README.md#postvalidate2) - Validate
 
-### [.oneofXmlModel](docs/sdks/oneofxmlmodel/README.md)
+### [oneofXmlModel](docs/sdks/oneofxmlmodel/README.md)
 
 * [getGenerate](docs/sdks/oneofxmlmodel/README.md#getgenerate) - Generate
 * [getGenerate1](docs/sdks/oneofxmlmodel/README.md#getgenerate1) - Generate1
@@ -99,9 +99,32 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 
+## Example
+
+```typescript
+import { OneOf } from "oneOf";
+
+(async () => {
+    const sdk = new OneOf();
+
+    let res;
+    try {
+        res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate13();
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 
@@ -181,8 +204,6 @@ const httpClient = axios.create({
 
 const sdk = new OneOf({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->

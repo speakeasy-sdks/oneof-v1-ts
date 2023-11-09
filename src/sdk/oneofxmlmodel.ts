@@ -26,7 +26,7 @@ export class OneofXmlModel {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/cat";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/cat";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
@@ -35,7 +35,7 @@ export class OneofXmlModel {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -90,7 +90,7 @@ export class OneofXmlModel {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/dog";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/dog";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = { ...config?.headers };
         headers["Accept"] = "application/xml";
@@ -99,7 +99,7 @@ export class OneofXmlModel {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -157,7 +157,7 @@ export class OneofXmlModel {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/cat";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/cat";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -177,7 +177,7 @@ export class OneofXmlModel {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -237,7 +237,7 @@ export class OneofXmlModel {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/dog";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/oneof/catordog/dog";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -257,7 +257,7 @@ export class OneofXmlModel {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
