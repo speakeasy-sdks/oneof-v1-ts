@@ -19,7 +19,7 @@ This endpoint returns a 'CatsOrADogOrWolves' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.generate2();
@@ -27,7 +27,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -55,7 +57,7 @@ This endpoint returns a 'CatsOrADogOrWolves' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate12();
@@ -63,7 +65,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -91,7 +95,7 @@ This endpoint returns a 'CatsOrADogOrWolves' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.getGenerate3();
@@ -99,7 +103,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -127,7 +133,7 @@ This endpoint expects a 'CatsOrADogOrWolves' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate12(new TextEncoder().encode("0xf9361EfF98"));
@@ -135,7 +141,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -164,7 +172,7 @@ This endpoint expects a 'CatsOrADogOrWolves' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.postValidate3(new TextEncoder().encode("0xcE70FDb90d"));
@@ -172,7 +180,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -201,7 +211,7 @@ This endpoint expects a 'CatsOrADogOrWolves' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.oneofArrayOrSingleXmlModelWithOptionalWrappingElement.validate2(new TextEncoder().encode("0x9f52AfDFcE"));
@@ -209,7 +219,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

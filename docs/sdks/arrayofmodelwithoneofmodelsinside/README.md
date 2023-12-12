@@ -17,7 +17,7 @@ This endpoint returns a 'ArrayOfCatOrDogObjects' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate13();
@@ -25,7 +25,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -53,7 +55,7 @@ This endpoint returns a 'ArrayOfCatOrDogObjects' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.getGenerate4();
@@ -61,7 +63,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -89,7 +93,7 @@ This endpoint expects a 'ArrayOfCatOrDogObjects' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate13(new TextEncoder().encode("0xDd9028aE08"));
@@ -97,7 +101,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -126,7 +132,7 @@ This endpoint expects a 'ArrayOfCatOrDogObjects' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.arrayOfModelWithOneofModelsInside.postValidate4(new TextEncoder().encode("0x74d81dbA30"));
@@ -134,7 +140,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

@@ -17,7 +17,7 @@
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.simpleXmlModel.generate();
@@ -25,7 +25,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -53,7 +55,7 @@ This endpoint returns a 'Dog' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.simpleXmlModel.generate1();
@@ -61,7 +63,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -89,7 +93,7 @@ This endpoint expects a 'Cat' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.simpleXmlModel.validate(new TextEncoder().encode("0xd6BB5B71e0"));
@@ -97,7 +101,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -126,7 +132,7 @@ This endpoint expects a 'Dog' model as xml.
 ```typescript
 import { OneOf } from "oneOf";
 
-(async() => {
+async function run() {
   const sdk = new OneOf();
 
   const res = await sdk.simpleXmlModel.validate1(new TextEncoder().encode("0xb1A694c3A3"));
@@ -134,7 +140,9 @@ import { OneOf } from "oneOf";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

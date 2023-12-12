@@ -54,7 +54,6 @@ src/sdk/models/shared/catordog.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/getgenerate13response.md
 docs/sdk/models/operations/getgenerate4response.md
 docs/sdk/models/operations/postvalidate13response.md
@@ -89,4 +88,5 @@ docs/sdks/simplexmlmodel/README.md
 docs/sdks/oneofarrayorsinglexmlmodelwithoptionalwrappingelement/README.md
 docs/sdks/oneofarrayxmlmodel/README.md
 docs/sdks/oneofxmlmodel/README.md
+USAGE.md
 .gitattributes
